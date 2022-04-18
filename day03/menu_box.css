@@ -1,0 +1,63 @@
+/* 노멀라이징 시작 */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+  }
+  
+  a{
+    color:inherit;
+    text-decoration: none ;
+    
+  }
+  /* 노멀라이즈 끝 */
+  
+  /* 커스텀 시작 */
+  .menu-box-1{
+    text-align:center;
+  }
+  /* 모든 메뉴 */
+  .menu-box-1 ul {
+    background-color:gray;
+  }
+  /* 1차 메뉴 */
+  .menu-box-1 > ul {
+    display:inline-block;
+    padding: 0 20px;
+    border-radius:10px;
+  }
+  
+  /* 1차메뉴 아이템 */
+  .menu-box-1 > ul > li {
+    display:inline-block;
+    position:relative;
+  }
+  /* 메뉴 아이템 텍스트 */
+  .menu-box-1  ul > li > a {
+    font-weight: bold;
+    padding:10px;
+    display:block;
+  }
+  
+  /* 호버된 메뉴 아이템의 텍스트 */
+  .menu-box-1  ul > li:hover > a {
+    background-color:black;
+    color:white;
+  }
+  
+  /* 2차 메뉴 */
+  .menu-box-1 > ul > li > ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  /* 호버된 1차 메뉴 아이템의 자식메뉴 */
+  .menu-box-1 > ul > li:hover > ul {
+    display: block;
+  }
+  
+  
+  /* 커스텀 끝 */
+  
