@@ -1,0 +1,41 @@
+.inline-grid {
+    font-size: 0;
+  }
+  
+  .inline-grid > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+  }
+  html,body{
+      margin:0;
+      padding:0;
+  }
+  section{
+      height:100vh;
+      background-color:black;
+  }
+  section>div:nth-child(2){
+      width: calc(100%/5*1);
+      height:25%;
+      background-color:red;
+     
+  }
+  section>div:nth-child(3){
+      width:calc(100%/5*4);
+      height:25%;
+      background-color:blue;
+     
+  }
+  section>div:nth-child(4){
+      width:calc(100%/5*2);
+      height:25%;
+      background-color:green;
+     
+  }
+  section>div:nth-child(5){
+      width:calc(100%/5*3);
+      height:25%;
+      background-color:yellow;
+     
+  }
